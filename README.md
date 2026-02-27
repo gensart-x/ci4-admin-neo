@@ -1,69 +1,124 @@
-# CodeIgniter 4 Application Starter
+<h1 align="center">
+🚀 Neo CI 4 HTML Admin Template
+</h1>
 
-## What is CodeIgniter?
+<p align="center">
+<img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="120">
+</p>
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+<p align="center">
+<b>Clean. Modular. Production-ready.</b><br>
+Built with Bootstrap 5, infused with CodeIgniter 4.
+</p>
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+---
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## ✨ Features
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+- ⚡ Fully responsive Bootstrap 5 layout
+- 🧠 Structured with CodeIgniter 4 MVC
+- 🎨 Clean and modern UI
+- 📦 Modular layout system
+- 🔥 Reusable components
+- 📱 Mobile-first approach
 
-## Installation & updates
+---
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+## 🎬 Live Vibes
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+<p align="center">
+<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="300">
+</p>
 
-## Setup
+Smooth transitions. Clean spacing. Zero spaghetti.
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+---
 
-## Important Change with index.php
+## 🛠 Tech Stack
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Tech Purpose
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+---
 
-**Please** read the user guide for a better explanation of how CI4 works!
+- Bootstrap 5 Frontend Framework
+- CodeIgniter 4 Backend Framework
+- PHP 8+ Core Language
 
-## Repository Management
+---
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## 📂 Project Structure
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+    app/
+     ├── Controllers/
+     ├── Views/
+     │    ├── layouts/
+     │    └── components/
+    public/
+     └── assets/
+          ├── css/
+          └── js/
 
-## Server Requirements
+<h2 align="center">
+<em>
+<b>
+Organized for sanity. Because messy folders are a crime.
+</b>
+</em>
+</h2>
 
-PHP version 8.2 or higher is required, with the following extensions installed:
+---
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+## 🚀 Installation
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
+```bash
+git clone https://github.com/gensart-x/ci4-admin-neo.git
+cd ci4-admin-neo
+composer install
+php spark serve
+```
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+Then open:
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+    http://localhost:8080
+
+You're live.
+
+---
+
+## 🧩 Template System
+
+- Layout stored inside `app/Views/templates`
+- Content injected using:
+
+    ```php
+    <?= $this->renderSection('content') ?>
+    ```
+
+- Components separated into reusable partials
+- Assets managed via `public/assets`
+
+Clean separation. Scalable foundation.
+
+---
+
+## 🎨 Customization
+
+- Modify Bootstrap variables for theming
+- Extend controllers as needed
+- Add new components easily
+- Keep layout modular and extendable
+
+Make it yours.
+
+---
+
+## 📜 License
+
+MIT --- use it, improve it, ship it.
+
+---
+
+<p align="center">
+<img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="120"/><br>
+Built with ☕ and questionable sleep cycles.
+</p>
