@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="At your service.">
+    <meta name="author" content="gensart">
+
+    <!-- Title -->
+    <title>Login Page</title>
+
+    <!-- Styles -->
+    <?= $this->include('templates/header_script') ?>
+</head>
+
+<body class="login-page">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-4">
+                <div class="card login-box-container">
+                    <div class="card-body">
+                        <div class="authent-logo">
+                            <a href="<?= base_url() ?>">Neo Gensart</a>
+                        </div>
+                        <div class="authent-text">
+                            <p>Welcome to Neo</p>
+                            <p>Please Sign-in to your account.</p>
+                        </div>
+
+                        <form>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-info m-b-xs">Sign In</button>
+                                <button class="btn btn-primary">Facebook</button>
+                            </div>
+                        </form>
+                        <div class="authent-reg">
+                            <p>Back to inside? <a href="<?= base_url() ?>">Let's Go</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascripts -->
+    <?= $this->include('templates/footer_script') ?>
+</body>
+
+</html>

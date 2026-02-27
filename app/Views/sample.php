@@ -6,6 +6,9 @@
         <a href="<?= base_url('login') ?>" class="btn btn-primary">
             login page
         </a>
+        <a href="<?= base_url('error') ?>" class="btn btn-danger">
+            error page
+        </a>
     </div>
 </div>
 <?= $this->include('templates/footer_script') ?>
